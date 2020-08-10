@@ -1,16 +1,16 @@
-
+import os
 # 这个程序可以帮助你配电脑
 # 预算如果是4700,就转化成4000~5000,以此类推
 """
 作者:@myb1myb3
 Create by @myb1myb3
-版本:1.0.1
-Version:1.0.1
+版本:1.0.2
+Version:1.0.2
 编写的软件:Visual Studio
 Written software:Visual Studio
 """
 
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 
 # 下面为配置
 intel10002000 = "入门级\n\
@@ -406,3 +406,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+    os.system("pause")
