@@ -4,16 +4,48 @@ import os
 """
 作者:@myb1myb3
 Create by @myb1myb3
-版本:1.0.2
-Version:1.0.2
+版本:1.1.4
+Version:1.1.4
 编写的软件:Visual Studio
 Written software:Visual Studio
+更新:2020年8月11日
+Update:2020/8/11
 """
 
-VERSION = "1.0.2"
+VERSION = "1.1.4"
 
 # 下面为配置
-intel10002000 = "入门级\n\
+intel10001500 = "入门级\n\
+处理器:Intel 赛扬 G1610T\n\
+主板:昂达H61C V8\n\
+内存:金士顿DDR4 2400 4G\n\
+HDD:无\n\
+SSD:七彩虹CN600 120GB NVMe M.2 SSD\n\
+显卡:核显\n\
+机箱:金达飞虹702B\n\
+电源:金河田智能芯580GT电源\n\
+显示器:AOC SBX01\n\
+键鼠套装:现代HY-MA75W\n\
+音箱:乐放 四方形便携迷你低音炮 黑色有线版\n\
+散热器:大水牛两极风F08\n\
+声卡:集成声卡\n\
+1451元"
+amd10001500 = "入门级\n\
+处理器:AMD APU系列 A8-7680\n\
+主板:铭瑄MS-撼地者 A88M-VH\n\
+内存:金士顿DDR4 2400 4G\n\
+HDD:无\n\
+SSD:七彩虹CN600 120GB NVMe M.2 SSD\n\
+显卡:集显\n\
+机箱:金达飞虹702B\n\
+电源:金河田智能芯480GT电源\n\
+显示器:AOC SBX01\n\
+键鼠套装:现代HY-MA75W\n\
+音箱:乐放 四方形便携迷你低音炮 黑色有线版\n\
+散热器:大水牛两极风F08\n\
+声卡:集成声卡\n\
+1990元"
+intel15002000 = "入门级\n\
 处理器:Intel 赛扬G4900\n\
 主板:昂达H110C+\n\
 内存:玖合DDR3 1333 4GB\n\
@@ -28,7 +60,7 @@ SSD:大华C800 128GB SATA SSD\n\
 散热器:大水牛两极风F08\n\
 声卡:创意达蓝调PCI-E SB0060\n\
 1831元"
-amd10002000 = "入门级\n\
+amd15002000 = "入门级\n\
 处理器:AMD Ryzen 3 1300X\n\
 主板:影驰A320M 龙将 Ver1.0\n\
 内存:玖合DDR3 1333 4GB\n\
@@ -133,7 +165,37 @@ SSD:三星970 EVO 250GB NVMe M.2 SSD\n\
 散热器:酷冷至尊T20\n\
 声卡:创意达蓝调PCI-E SN0105\n\
 4898元"
-intel50007000 = "中高端\n\
+intel50006000 = "主流\n\
+处理器:Intel酷睿i5 9400F\n\
+主板:华硕TUF B360M-PLUS GAMING\n\
+内存:美商海盗船复仇者RGB PRO DDR4 3200 16GB\n\
+HDD:西部数据蓝盘 1TB 64M SATA3 硬盘(WD10EZEX)\n\
+SSD:金士顿A2000 500GB NVMe M.2 SSD\n\
+显卡:技嘉GeForce GTX 1650 SUPER OC 4G\n\
+机箱:鑫谷 小钢炮6\n\
+电源:金河田智能芯680GT电源\n\
+显示器:微星E2209\n\
+键鼠套装:罗技MK120键鼠套装\n\
+音箱:小米AI音箱\n\
+散热器:赛普雷冷山 SP-4120\n\
+声卡:创意达蓝调R6\n\
+5987元"
+amd50006000 = "主流\n\
+处理器:AMD Ryzen 5 3600\n\
+主板:微星B450M MORTAR\n\
+内存:美商海盗船复仇者RGB PRO DDR4 3200 16GB\n\
+HDD:西部数据蓝盘 1TB 64M SATA3 硬盘(WD10EZEX)\n\
+SSD:三星970 EVO 500GB NVMe M.2 SSD\n\
+显卡:蓝宝石RX580 2048SP 8G D5 白金版 OC\n\
+机箱:鑫谷 小钢炮6\n\
+电源:海盗船VS550\n\
+显示器:微星E2209\n\
+键鼠套装:罗技MK120键鼠套装\n\
+音箱:本手Q5\n\
+散热器:酷冷至尊T400i\n\
+声卡:创意达蓝调PCI-E SB0060\n\
+4898元"
+intel60007000 = "中高端\n\
 处理器:Intel 酷睿i7 9700\n\
 主板:七彩虹H410M-K PRO V20\n\
 内存:酷兽DDR4 2400 8GB\n\
@@ -148,7 +210,7 @@ SSD:三星970 EVO 500GB NVMe M.2 SSD\n\
 散热器:酷冷至尊T20\n\
 声卡:创意达蓝调R6\n\
 6986元"
-amd50007000 = "中高端\n\
+amd60007000 = "中高端\n\
 处理器:AMD R7 3700X\n\
 主板:华硕PRIME B460M-K\n\
 内存:美商海盗船复仇者RGB PRO DDR4 3200 16GB\n\
@@ -163,7 +225,38 @@ SSD:三星970 EVO 250GB NVMe M.2 SSD\n\
 散热器:酷冷至尊T20\n\
 声卡:创意达蓝调PCI-E SN0105\n\
 6917元"
-intel700010000 = "高端\n\
+intel70008000 = "高端\n\
+处理器:Intel酷睿i5 9400F\n\
+主板:华硕TUF B360M-PLUS GAMING\n\
+内存:联想红靡战甲 Master大师 DDR4 2666 16GB(8GB×2)\n\
+HDD:西部数据蓝盘 1TB 64M SATA3 硬盘(WD10EZEX)\n\
+SSD:三星970 EVO 250GB NVMe M.2 SSD\n\
+显卡:七彩虹GeForce RTX 2060 Gaming ES\n\
+机箱:鑫谷 小钢炮6\n\
+电源:安钛克VP450P\n\
+显示器:AOC 24B2XH\n\
+键鼠套装:罗技MK120键鼠套装\n\
+音箱:小米AI音箱\n\
+散热器:Prolimatech ARTISTS 3i\n\
+声卡:创意达蓝调R6\n\
+7728元"
+amd70008000 = "高端\n\
+处理器:Intel酷睿i5 9400F\n\
+主板:微星B450M MORTAR\n\
+内存:美商海盗船复仇者RGB PRO DDR4(16G)\n\
+HDD:西部数据蓝盘 1TB 64M SATA3 硬盘(WD10EZEX)\n\
+SSD:三星970 EVO 250GB NVMe M.2 SSD\n\
+显卡:蓝宝石RX580 2048SP 8G D5 Pulse\n\
+机箱:鑫谷 小钢炮6\n\
+电源:安钛克VP450P\n\
+显示器:微星E2209\n\
+键鼠套装:罗技MK120键鼠套装\n\
+音箱:小米AI音箱\n\
+散热器:酷冷至尊T400i\n\
+声卡:创新Sound Blaster Z 声卡\n\
+7979元"
+
+intel800010000 = "高端\n\
 处理器:Intel 酷睿i7 8086k\n\
 主板:七彩虹H410M-K PRO V20\n\
 内存:美商海盗船复仇者RGB PRO DDR4 3200 16GB\n\
@@ -178,7 +271,7 @@ SSD:三星970 EVO 500GB NVMe M.2 SSD\n\
 散热器:利民银箭Arrow IB-E 超频版\n\
 声卡:创意达蓝调R6\n\
 9875元"
-amd700010000 = "高端\n\
+amd800010000 = "高端\n\
 处理器:AMD Ryzen 9 3900X\n\
 主板:华硕PRIME B460M-K\n\
 内存:美商海盗船复仇者RGB PRO DDR4 3200 16GB\n\
@@ -349,18 +442,24 @@ def program(pinpai,yusuan):
     yusuan = int(yusuan)
     print(yusuan)
     if pinpai == "in":
-        if yusuan >= 2000 and yusuan < 3000:
-            print(intel10002000)
+        if yusuan >= 1500 and yusuan < 2000:
+            print(intel10001500)
+        elif yusuan >= 2000 and yusuan < 3000:
+            print(intel15002000)
         elif yusuan >= 3000 and yusuan < 4000:
             print(intel20003000)
         elif yusuan >= 4000 and yusuan < 5000:
             print(intel30004000)
-        elif yusuan >= 5000 and yusuan < 7000:
+        elif yusuan >= 5000 and yusuan < 6000:
             print(intel40005000)
-        elif yusuan >= 7000 and yusuan < 10000:
-            print(intel50007000)
+        elif yusuan >= 6000 and yusuan < 7000:
+            print(intel50006000)
+        elif yusuan >= 7000 and yusuan < 8000:
+            print(intel60007000)
+        elif yusuan >= 8000 and yusuan < 10000:
+            print(intel70008000)
         elif yusuan >= 10000 and yusuan < 20000:
-            print(intel700010000)
+            print(intel800010000)
         elif yusuan >= 20000 and yusuan < 50000:
             print(intel1000020000)
         elif yusuan >= 50000 and yusuan < 100000:
@@ -372,18 +471,24 @@ def program(pinpai,yusuan):
         elif yusuan >= 500000:
             print(intel200000500000)
     if pinpai == "3a":
-        if yusuan >= 2000 and yusuan < 3000:
-            print(amd10002000)
+        if yusuan >= 1500 and yusuan < 2000:
+            print(amd10001500)
+        elif yusuan >= 2000 and yusuan < 3000:
+            print(amd15002000)
         elif yusuan >= 3000 and yusuan < 4000:
             print(amd20003000)
         elif yusuan >= 4000 and yusuan < 5000:
             print(amd30004000)
-        elif yusuan >= 5000 and yusuan < 7000:
+        elif yusuan >= 5000 and yusuan < 6000:
             print(amd40005000)
-        elif yusuan >= 7000 and yusuan < 10000:
-            print(amd50007000)
+        elif yusuan >= 6000 and yusuan < 7000:
+            print(amd50006000)
+        elif yusuan >= 7000 and yusuan < 8000:
+            print(amd60007000)
+        elif yusuan >= 8000 and yusuan < 10000:
+            print(amd70008000)
         elif yusuan >= 10000 and yusuan < 20000:
-            print(amd700010000)
+            print(amd800010000)
         elif yusuan >= 20000 and yusuan < 50000:
             print(amd1000020000)
         elif yusuan >= 50000 and yusuan < 100000:
@@ -407,4 +512,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-    os.system("pause")
+os.system("pause")
